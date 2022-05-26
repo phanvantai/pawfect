@@ -16,6 +16,11 @@
 		DE6323B3283F6F7800FF10F9 /* PawfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323B2283F6F7800FF10F9 /* PawfectTests.swift */; };
 		DE6323BD283F6F7800FF10F9 /* PawfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323BC283F6F7800FF10F9 /* PawfectUITests.swift */; };
 		DE6323BF283F6F7800FF10F9 /* PawfectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323BE283F6F7800FF10F9 /* PawfectUITestsLaunchTests.swift */; };
+		DE6323CD283F6FA700FF10F9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323CC283F6FA700FF10F9 /* SplashView.swift */; };
+		DE6323D0283F7C3A00FF10F9 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323CF283F7C3A00FF10F9 /* OnboardingContentView.swift */; };
+		DE6323D4283F81BC00FF10F9 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323D3283F81BC00FF10F9 /* Color+Extensions.swift */; };
+		DE6323D6283F828100FF10F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323D5283F828100FF10F9 /* Constants.swift */; };
+		DE6323D8283F857C00FF10F9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6323D7283F857C00FF10F9 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		DE6323B8283F6F7800FF10F9 /* PawfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6323BC283F6F7800FF10F9 /* PawfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawfectUITests.swift; sourceTree = "<group>"; };
 		DE6323BE283F6F7800FF10F9 /* PawfectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawfectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE6323CC283F6FA700FF10F9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		DE6323CF283F7C3A00FF10F9 /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
+		DE6323D3283F81BC00FF10F9 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		DE6323D5283F828100FF10F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE6323D7283F857C00FF10F9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,8 @@
 		DE63239B283F6F7700FF10F9 /* Pawfect */ = {
 			isa = PBXGroup;
 			children = (
+				DE6323D1283F818500FF10F9 /* Commons */,
+				DE6323CB283F6F9300FF10F9 /* Views */,
 				DE63239C283F6F7700FF10F9 /* PawfectApp.swift */,
 				DE63239E283F6F7700FF10F9 /* ContentView.swift */,
 				DE6323A0283F6F7800FF10F9 /* Assets.xcassets */,
@@ -131,6 +143,41 @@
 				DE6323BE283F6F7800FF10F9 /* PawfectUITestsLaunchTests.swift */,
 			);
 			path = PawfectUITests;
+			sourceTree = "<group>";
+		};
+		DE6323CB283F6F9300FF10F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE6323CE283F7C2700FF10F9 /* Onboarding */,
+				DE6323CC283F6FA700FF10F9 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE6323CE283F7C2700FF10F9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE6323CF283F7C3A00FF10F9 /* OnboardingContentView.swift */,
+				DE6323D7283F857C00FF10F9 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DE6323D1283F818500FF10F9 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				DE6323D2283F818B00FF10F9 /* Extensions */,
+				DE6323D5283F828100FF10F9 /* Constants.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		DE6323D2283F818B00FF10F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE6323D3283F81BC00FF10F9 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +312,13 @@
 			files = (
 				DE6323A6283F6F7800FF10F9 /* Persistence.swift in Sources */,
 				DE63239F283F6F7700FF10F9 /* ContentView.swift in Sources */,
+				DE6323CD283F6FA700FF10F9 /* SplashView.swift in Sources */,
+				DE6323D8283F857C00FF10F9 /* OnboardingView.swift in Sources */,
+				DE6323D0283F7C3A00FF10F9 /* OnboardingContentView.swift in Sources */,
+				DE6323D4283F81BC00FF10F9 /* Color+Extensions.swift in Sources */,
 				DE6323A9283F6F7800FF10F9 /* Pawfect.xcdatamodeld in Sources */,
 				DE63239D283F6F7700FF10F9 /* PawfectApp.swift in Sources */,
+				DE6323D6283F828100FF10F9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
