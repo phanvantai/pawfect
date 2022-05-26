@@ -27,9 +27,9 @@ struct OnboardingContentView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: geo.size.width, maxHeight: geo.size.height * 0.4)
-                    .clipped()
                 Spacer()
             }
+            .background(Color.black)
             VStack {
                 Spacer()
                 HStack {
@@ -50,15 +50,13 @@ struct OnboardingContentView: View {
                     .font(Constants.primaryFontSize)
                     Spacer()
                 }
-                    //.multilineTextAlignment(.leading)
                 Spacer()
                     .frame(height: 64)
                 Spacer()
             }
             .padding(20)
         }
-        .edgesIgnoringSafeArea(.all)
-        .background(Color.black)
+        .ignoresSafeArea(.all)
     }
 }
 
